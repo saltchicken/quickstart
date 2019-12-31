@@ -9,7 +9,7 @@ class Window(pyglet.window.Window):
 		self.batch = pyglet.graphics.Batch()
 		self.vertex_list = self.batch.add(4, pyglet.gl.GL_QUADS, None,
 						  ('v2i', [200, 200, 300, 200, 300, 100, 200, 100]),
-						  ('c4B', [200, 200, 220, 255] * 4)
+						  ('c4B', [200, 200, 220, 255] * 4))
 
 	def on_draw(self):
 		pyglet.gl.glClearColor(1,1,1,1)
